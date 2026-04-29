@@ -181,7 +181,7 @@ export function HeroSection() {
         <p className={`mb-8 max-w-xl text-sm lg:text-base text-white/65 leading-relaxed transition-all duration-700 delay-100 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`}>
-          This is a full ecosystem, not isolated endpoints. Individual endpoints cannot be tested in isolation because every layer is linked to the agent engine, the synchronization network, and the fallback communication paths.
+          Detection, routing, fallback delivery, and synchronization move as one connected flow across the system.
         </p>
         
         {/* Main headline */}
@@ -203,28 +203,6 @@ export function HeroSection() {
         </div>
       </div>
       
-      {/* Stats — 3 metrics static, no auto-scroll */}
-      <div 
-        className={`absolute bottom-12 left-0 right-0 px-6 lg:px-12 transition-all duration-700 delay-500 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <div className="max-w-[1400px] mx-auto flex items-start gap-10 lg:gap-20">
-          {[
-            { value: "3", label: "linked layers" },
-            { value: "24/7", label: "continuous synchronization" },
-            { value: "0", label: "single-point dependency" },
-          ].map((stat) => (
-            <div key={stat.label} className="flex flex-col gap-2">
-              <span className="text-3xl lg:text-4xl font-display text-white">{stat.value}</span>
-              <span className="text-xs text-white/50 leading-tight">
-                {stat.label}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Scroll indicator */}
 
     </section>

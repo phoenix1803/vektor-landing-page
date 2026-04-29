@@ -170,14 +170,14 @@ function EcosystemNode({ node }: { node: EcosystemNode }) {
             {/* Glow effect */}
             <div
                 className={`absolute inset-0 rounded-full blur-xl transition-all duration-300 ${isHovered ? "opacity-100 scale-150" : "opacity-50 scale-100"
-                    } bg-gradient-to-r ${node.color} to-transparent`}
+                    } bg-linear-to-r ${node.color} to-transparent`}
                 style={{ width: "120px", height: "120px", left: "-60px", top: "-60px" }}
             />
 
             {/* Node */}
             <div
                 className={`relative w-24 h-24 rounded-full border-2 flex items-center justify-center transition-all duration-300 backdrop-blur-sm ${isHovered
-                        ? `border-current bg-gradient-to-br ${node.color} to-foreground/10 text-white scale-110`
+                        ? `border-current bg-linear-to-br ${node.color} to-foreground/10 text-white scale-110`
                         : "border-foreground/20 bg-foreground/5 text-foreground"
                     }`}
             >
@@ -233,17 +233,15 @@ export function EcosystemSection() {
                             </span>
                         </div>
                         <h2 className="text-5xl md:text-6xl lg:text-[64px] font-display tracking-tight mb-6 leading-[1.1]">
-                            The Vektor Ecosystem
+                            See how the ecosystem links together
                         </h2>
                         <p className="text-lg text-muted-foreground leading-relaxed">
-                            All components work together seamlessly. Deploy the core agent,
-                            access via mobile, explore the code, join the community, and see
-                            it live.
+                            Detection, routing, fallback delivery, and synchronization stay in one flow, so the architecture is easy to read without testing every layer separately.
                         </p>
                     </div>
 
                     {/* Ecosystem Diagram */}
-                    <div className="relative w-full h-[700px] bg-gradient-to-b from-foreground/5 to-transparent rounded-2xl border border-foreground/10 overflow-hidden">
+                    <div className="relative w-full h-[700px] bg-linear-to-b from-foreground/5 to-transparent rounded-2xl border border-foreground/10 overflow-hidden">
                         <SVGConnections />
 
                         {/* Nodes */}
@@ -262,8 +260,8 @@ export function EcosystemSection() {
                         </div>
 
                         {/* Decorative corners */}
-                        <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-[#eca8d6]/10 to-transparent rounded-full blur-3xl" />
-                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl from-[#67e8f9]/10 to-transparent rounded-full blur-3xl" />
+                        <div className="absolute top-0 left-0 w-32 h-32 bg-linear-to-br from-[#eca8d6]/10 to-transparent rounded-full blur-3xl" />
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-linear-to-tl from-[#67e8f9]/10 to-transparent rounded-full blur-3xl" />
                     </div>
 
                     {/* Bottom info */}

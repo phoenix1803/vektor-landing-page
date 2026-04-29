@@ -23,18 +23,18 @@ export function GitHubRepoSection() {
     const features = [
         {
             icon: <Code2 className="w-5 h-5" />,
-            title: "Open Source",
-            description: "Fully open ecosystem. Contribute and build.",
+            title: "Modular",
+            description: "Each layer is designed to extend cleanly.",
         },
         {
             icon: <GitFork className="w-5 h-5" />,
-            title: "Extensible",
-            description: "Fork, customize, and deploy your own agents.",
+            title: "Versioned",
+            description: "Trace changes and ship updates with confidence.",
         },
         {
             icon: <Star className="w-5 h-5" />,
             title: "Community Driven",
-            description: "Join thousands of developers worldwide.",
+            description: "Build with others and share improvements.",
         },
     ];
 
@@ -54,18 +54,18 @@ export function GitHubRepoSection() {
                             <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full border border-foreground/20 bg-foreground/5">
                                 <Github className="w-4 h-4" />
                                 <span className="text-xs font-mono text-foreground/60 uppercase tracking-wider">
-                                    Open Source
+                                    Repository
                                 </span>
                             </div>
 
                             <h2 className="text-5xl md:text-6xl lg:text-[64px] font-display tracking-tight mb-6 leading-[1.1]">
-                                Vektor Ecosystem
+                                Vektor Ecosystem Codebase
                             </h2>
 
                             <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
-                                The complete Vektor codebase is available on GitHub. Explore the
-                                source code, contribute improvements, and build on top of our
-                                infrastructure.
+                                The complete Vektor codebase lives on GitHub. Explore the
+                                architecture, inspect the services, and extend the system from a
+                                single place.
                             </p>
 
                             <div className="flex flex-col sm:flex-row items-start gap-4 mb-12">
@@ -76,7 +76,7 @@ export function GitHubRepoSection() {
                                 >
                                     <Button
                                         size="lg"
-                                        className="bg-gradient-to-r from-[#a78bfa] to-[#67e8f9] hover:from-[#a78bfa]/90 hover:to-[#67e8f9]/90 text-white px-8 h-14 text-base rounded-full group shadow-lg shadow-[#a78bfa]/20"
+                                        className="bg-linear-to-r from-[#a78bfa] to-[#67e8f9] hover:from-[#a78bfa]/90 hover:to-[#67e8f9]/90 text-white px-8 h-14 text-base rounded-full group shadow-lg shadow-[#a78bfa]/20"
                                     >
                                         <Github className="w-4 h-4 mr-2" />
                                         View on GitHub
@@ -92,7 +92,7 @@ export function GitHubRepoSection() {
                                         key={index}
                                         className="flex items-start gap-4 p-4 rounded-lg border border-foreground/10 bg-foreground/5 hover:bg-foreground/10 transition-colors"
                                     >
-                                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#a78bfa] to-[#67e8f9] flex items-center justify-center text-white flex-shrink-0 mt-1">
+                                        <div className="w-10 h-10 rounded-lg bg-linear-to-br from-[#a78bfa] to-[#67e8f9] flex items-center justify-center text-white shrink-0 mt-1">
                                             {feature.icon}
                                         </div>
                                         <div>
@@ -113,7 +113,7 @@ export function GitHubRepoSection() {
                             {/* Floating cards */}
                             <div className="relative">
                                 {/* Main code card */}
-                                <div className="bg-gradient-to-br from-foreground/10 to-foreground/5 border border-foreground/20 rounded-xl overflow-hidden shadow-2xl">
+                                <div className="bg-linear-to-br from-foreground/10 to-foreground/5 border border-foreground/20 rounded-xl overflow-hidden shadow-2xl">
                                     {/* Card header */}
                                     <div className="bg-foreground/20 px-6 py-4 border-b border-foreground/10">
                                         <p className="text-sm font-mono text-muted-foreground">
@@ -174,34 +174,34 @@ export function GitHubRepoSection() {
                                         <div className="grid grid-cols-3 gap-4">
                                             <div>
                                                 <p className="text-xs text-muted-foreground mb-1">
-                                                    Stars
+                                                    Modules
                                                 </p>
-                                                <p className="text-lg font-semibold text-white flex items-center gap-1">
-                                                    <Star className="w-4 h-4 fill-[#fbbf24] text-[#fbbf24]" />
-                                                    500+
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p className="text-xs text-muted-foreground mb-1">
-                                                    Forks
-                                                </p>
-                                                <p className="text-lg font-semibold text-white flex items-center gap-1">
-                                                    <GitFork className="w-4 h-4 text-[#67e8f9]" />
-                                                    120+
+                                                <p className="text-lg font-semibold text-white">
+                                                    12+
                                                 </p>
                                             </div>
                                             <div>
                                                 <p className="text-xs text-muted-foreground mb-1">
-                                                    License
+                                                    Services
                                                 </p>
-                                                <p className="text-lg font-semibold text-white">MIT</p>
+                                                <p className="text-lg font-semibold text-white">
+                                                    8+
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p className="text-xs text-muted-foreground mb-1">
+                                                    Integrations
+                                                </p>
+                                                <p className="text-lg font-semibold text-white">
+                                                    24+
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Floating accent card */}
-                                <div className="absolute -bottom-6 -right-6 w-48 h-24 bg-gradient-to-br from-[#eca8d6]/20 to-[#a78bfa]/10 border border-[#eca8d6]/30 rounded-lg p-4 shadow-lg backdrop-blur-sm">
+                                <div className="absolute -bottom-6 -right-6 w-48 h-24 bg-linear-to-br from-[#eca8d6]/20 to-[#a78bfa]/10 border border-[#eca8d6]/30 rounded-lg p-4 shadow-lg backdrop-blur-sm">
                                     <p className="text-xs font-mono text-muted-foreground mb-2">
                                         Latest Release
                                     </p>
@@ -212,7 +212,7 @@ export function GitHubRepoSection() {
                                 </div>
 
                                 {/* Decorative glow */}
-                                <div className="absolute -inset-6 bg-gradient-to-r from-[#a78bfa]/10 to-[#67e8f9]/10 rounded-2xl blur-3xl -z-10" />
+                                <div className="absolute -inset-6 bg-linear-to-r from-[#a78bfa]/10 to-[#67e8f9]/10 rounded-2xl blur-3xl -z-10" />
                             </div>
                         </div>
                     </div>
