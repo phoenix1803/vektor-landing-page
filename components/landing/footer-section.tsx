@@ -14,12 +14,13 @@ const footerLinks = {
     { name: "Documentation", href: "#developers" },
     { name: "Operator SDK", href: "#developers" },
     { name: "API Reference", href: "#developers" },
-    { name: "Status", href: "#" },
+    { name: "Agent Deployment", href: "https://vektor-core-agent-1.onrender.com/" },
+    { name: "GitHub Repo", href: "https://github.com/phoenix1803/vektor-ecosystem" },
   ],
-  Company: [
-    { name: "About", href: "#" },
+  Resources: [
+    { name: "App Drive", href: "https://drive.google.com/drive/u/0/folders/1zuGbGpFsWmnzic7qLSsN65LvaNU4PDxq" },
+    { name: "Status", href: "#" },
     { name: "Blog", href: "#" },
-    { name: "Careers", href: "#", badge: "Hiring" },
     { name: "Contact", href: "#" },
   ],
   Legal: [
@@ -30,9 +31,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: "Twitter", href: "#" },
-  { name: "GitHub", href: "#" },
-  { name: "LinkedIn", href: "#" },
+  { name: "Website", href: "https://www.hyper-grey.xyz/" },
+  { name: "GitHub", href: "https://github.com/phoenix1803/vektor-ecosystem" },
+  { name: "Community", href: "https://www.hyper-grey.xyz/" },
 ];
 
 function AnimatedWaveCanvas() {
@@ -111,9 +112,9 @@ export function FooterSection() {
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Main Footer */}
         <div className="py-16 lg:py-20">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-12 lg:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-12 lg:gap-8">
             {/* Brand Column */}
-            <div className="col-span-2">
+            <div className="col-span-2 md:col-span-1">
               <a href="#" className="inline-flex items-center gap-2 mb-6">
                 <span className="text-2xl font-display text-white">Vektor</span>
                 <span className="text-xs text-white/40 font-mono">SYS</span>

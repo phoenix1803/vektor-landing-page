@@ -61,13 +61,19 @@ export function CtaSection() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-start gap-4">
-                  <Button
-                    size="lg"
-                    className="bg-foreground hover:bg-foreground/90 text-background px-8 h-14 text-base rounded-full group"
+                  <a
+                    href="https://youtube.com/shorts/jEDcW9UTcHg?si=TsMmjRT1w5KdpwU5"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Watch demo
-                    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                  </Button>
+                    <Button
+                      size="lg"
+                      className="bg-foreground hover:bg-foreground/90 text-background px-8 h-14 text-base rounded-full group"
+                    >
+                      Watch demo
+                      <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                    </Button>
+                  </a>
                   <Button
                     size="lg"
                     variant="outline"

@@ -2,6 +2,7 @@ import { Navigation } from "@/components/landing/navigation";
 import { HeroSection } from "@/components/landing/hero-section";
 import { SystemOverviewSection } from "@/components/landing/system-overview-section";
 import { SimiaSection } from "@/components/landing/simia-section";
+import { AppDownloadSection } from "@/components/landing/app-download-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { FooterSection } from "@/components/landing/footer-section";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <SystemOverviewSection />
       <SimiaSection />
+      <AppDownloadSection />
       <CtaSection />
       <FooterSection />
     </main>
