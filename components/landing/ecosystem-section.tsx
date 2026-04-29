@@ -177,8 +177,8 @@ function EcosystemNode({ node }: { node: EcosystemNode }) {
             {/* Node */}
             <div
                 className={`relative w-24 h-24 rounded-full border-2 flex items-center justify-center transition-all duration-300 backdrop-blur-sm ${isHovered
-                        ? `border-current bg-linear-to-br ${node.color} to-foreground/10 text-white scale-110`
-                        : "border-foreground/20 bg-foreground/5 text-foreground"
+                    ? `border-current bg-linear-to-br ${node.color} to-foreground/10 text-white scale-110`
+                    : "border-foreground/20 bg-foreground/5 text-foreground"
                     }`}
             >
                 {node.icon}

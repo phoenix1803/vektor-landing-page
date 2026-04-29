@@ -58,7 +58,7 @@ function BlurWord({ word, trigger }: { word: string; trigger: number }) {
       framesRef.current.forEach(cancelAnimationFrame);
       timersRef.current.forEach(clearTimeout);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [trigger]);
 
   // gradient colours cycling across letter positions
@@ -163,46 +163,43 @@ export function HeroSection() {
           />
         ))}
       </div>
-      
+
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 py-32 lg:py-40">
         <div className="lg:max-w-[55%]">
-        {/* Eyebrow */}
-        <div 
-          className={`mb-8 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
-        >
-          <span className="inline-flex items-center gap-3 text-sm font-mono text-white/60">
-            <span className="w-8 h-px bg-white/30" />
-            Distributed emergency intelligence for connected response
-          </span>
-        </div>
-
-        <p className={`mb-8 max-w-xl text-sm lg:text-base text-white/65 leading-relaxed transition-all duration-700 delay-100 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-        }`}>
-          Detection, routing, fallback delivery, and synchronization move as one connected flow across the system.
-        </p>
-        
-        {/* Main headline */}
-        <div className="mb-12">
-          <h1 
-            className={`text-left text-[clamp(2rem,6vw,7rem)] font-display leading-[0.92] tracking-tight text-white transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+          {/* Eyebrow */}
+          <div
+            className={`mb-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              }`}
           >
-            <span className="block whitespace-nowrap">Emergency intelligence,</span>
-            <span className="block whitespace-nowrap">
-              systems that{" "}
-              <span className="relative inline-block">
-                <BlurWord word={words[wordIndex]} trigger={wordIndex} />
-              </span>
+            <span className="inline-flex items-center gap-3 text-sm font-mono text-white/60">
+              <span className="w-8 h-px bg-white/30" />
+              Distributed emergency intelligence for connected response
             </span>
-          </h1>
-        </div>
+          </div>
+
+          <p className={`mb-8 max-w-xl text-sm lg:text-base text-white/65 leading-relaxed transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}>
+            Detection, routing, fallback delivery, and synchronization move as one connected flow across the system.
+          </p>
+
+          {/* Main headline */}
+          <div className="mb-12">
+            <h1
+              className={`text-left text-[clamp(2rem,6vw,7rem)] font-display leading-[0.92] tracking-tight text-white transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`}
+            >
+              <span className="block whitespace-nowrap">Emergency intelligence,</span>
+              <span className="block whitespace-nowrap">
+                systems that{" "}
+                <span className="relative inline-block">
+                  <BlurWord word={words[wordIndex]} trigger={wordIndex} />
+                </span>
+              </span>
+            </h1>
+          </div>
         </div>
       </div>
-      
+
       {/* Scroll indicator */}
 
     </section>
