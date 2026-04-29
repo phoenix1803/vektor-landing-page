@@ -7,7 +7,8 @@ const footerLinks = {
   Product: [
     { name: "System", href: "#system" },
     { name: "Flow", href: "#flow" },
-    { name: "Simia Demo", href: "#simia" },
+    { name: "Ecosystem", href: "#ecosystem" },
+    { name: "Video", href: "#video" },
     { name: "Reliability", href: "#reliability" },
   ],
   Developers: [
@@ -99,7 +100,7 @@ export function FooterSection() {
       <div className="relative w-full h-[340px] md:h-[420px] overflow-hidden">
         <img
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2810%29-UnDKstODkIENp5xqTYUEpt0Sm8tNOw.png"
-          alt="Simia-inspired landscape"
+          alt="Vektor ecosystem landscape"
           className="w-full h-full object-cover object-center"
         />
         {/* Gradient fade to black at bottom */}

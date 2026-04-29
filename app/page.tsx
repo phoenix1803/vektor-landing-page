@@ -1,7 +1,6 @@
 import { Navigation } from "@/components/landing/navigation";
 import { HeroSection } from "@/components/landing/hero-section";
 import { SystemOverviewSection } from "@/components/landing/system-overview-section";
-import { SimiaSection } from "@/components/landing/simia-section";
 import { AppDownloadSection } from "@/components/landing/app-download-section";
 import { AgentDeploymentSection } from "@/components/landing/agent-deployment-section";
 import { GitHubRepoSection } from "@/components/landing/github-repo-section";
@@ -16,7 +15,6 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <SystemOverviewSection />
-      <SimiaSection />
       <AppDownloadSection />
       <AgentDeploymentSection />
       <GitHubRepoSection />

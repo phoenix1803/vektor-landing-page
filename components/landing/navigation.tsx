@@ -7,8 +7,8 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { name: "System",        href: "#system"        },
   { name: "Flow",          href: "#flow"          },
-  { name: "Simia Demo",    href: "#simia"         },
-  { name: "Reliability",   href: "#reliability"   },
+  { name: "Ecosystem",     href: "#ecosystem"     },
+  { name: "Video",         href: "#video"         },
   { name: "CTA",           href: "#cta"           },
 ];
 
@@ -66,9 +66,6 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className={`transition-all duration-500 ${isScrolled ? "text-xs text-foreground/70 hover:text-foreground" : "text-sm text-white/70 hover:text-white"}`}>
-              Demo
-            </a>
             <Button
               size="sm"
               className={`rounded-full transition-all duration-500 ${isScrolled ? "bg-foreground hover:bg-foreground/90 text-background px-4 h-8 text-xs" : "bg-white hover:bg-white/90 text-black px-6"}`}

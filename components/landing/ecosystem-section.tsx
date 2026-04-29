@@ -53,7 +53,7 @@ const ecosystemNodes: EcosystemNode[] = [
     {
         id: "demo",
         title: "Live Demo",
-        description: "Interactive Simia demonstration",
+        description: "Interactive flow demo",
         icon: <Play className="w-6 h-6" />,
         href: "https://youtube.com/shorts/jEDcW9UTcHg?si=TsMmjRT1w5KdpwU5",
         color: "from-[#f87171]",
@@ -100,6 +100,7 @@ function SVGConnections() {
                 stroke="url(#gradient1)"
                 strokeWidth="2"
                 strokeDasharray="5,5"
+                strokeLinecap="round"
             />
             <line
                 x1="500"
@@ -109,6 +110,7 @@ function SVGConnections() {
                 stroke="url(#gradient2)"
                 strokeWidth="2"
                 strokeDasharray="5,5"
+                strokeLinecap="round"
             />
             <line
                 x1="500"
@@ -118,6 +120,7 @@ function SVGConnections() {
                 stroke="url(#gradient3)"
                 strokeWidth="2"
                 strokeDasharray="5,5"
+                strokeLinecap="round"
             />
             <line
                 x1="500"
@@ -127,6 +130,7 @@ function SVGConnections() {
                 stroke="url(#gradient5)"
                 strokeWidth="2"
                 strokeDasharray="5,5"
+                strokeLinecap="round"
             />
 
             {/* Side connections */}
@@ -139,6 +143,7 @@ function SVGConnections() {
                 strokeWidth="1"
                 strokeDasharray="3,3"
                 opacity="0.5"
+                strokeLinecap="round"
             />
             <line
                 x1="850"
@@ -149,7 +154,15 @@ function SVGConnections() {
                 strokeWidth="1"
                 strokeDasharray="3,3"
                 opacity="0.5"
+                strokeLinecap="round"
             />
+
+            {/* Connection anchors */}
+            <circle cx="500" cy="100" r="10" fill="#eca8d6" fillOpacity="0.35" />
+            <circle cx="150" cy="400" r="8" fill="#a78bfa" fillOpacity="0.35" />
+            <circle cx="850" cy="400" r="8" fill="#67e8f9" fillOpacity="0.35" />
+            <circle cx="150" cy="700" r="8" fill="#fbbf24" fillOpacity="0.35" />
+            <circle cx="850" cy="700" r="8" fill="#f87171" fillOpacity="0.35" />
         </svg>
     );
 }
@@ -217,6 +230,7 @@ export function EcosystemSection() {
 
     return (
         <section
+            id="ecosystem"
             ref={sectionRef}
             className="relative py-32 lg:py-48 overflow-hidden bg-black"
         >
@@ -276,18 +290,18 @@ export function EcosystemSection() {
                         </div>
                         <div className="p-6 rounded-lg border border-foreground/10 bg-foreground/5 backdrop-blur-sm">
                             <h3 className="text-sm font-semibold mb-2 text-white">
-                                Open & Extensible
+                                Connected Layers
                             </h3>
                             <p className="text-sm text-muted-foreground">
-                                Build on top of our public GitHub ecosystem
+                                Every part of the flow feeds the next one cleanly
                             </p>
                         </div>
                         <div className="p-6 rounded-lg border border-foreground/10 bg-foreground/5 backdrop-blur-sm">
                             <h3 className="text-sm font-semibold mb-2 text-white">
-                                One-Click Deployment
+                                Clear Handoffs
                             </h3>
                             <p className="text-sm text-muted-foreground">
-                                Deploy the full stack with a single command
+                                Each node maps to a distinct responsibility in the architecture
                             </p>
                         </div>
                     </div>

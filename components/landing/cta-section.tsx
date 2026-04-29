@@ -30,7 +30,7 @@ export function CtaSection() {
   };
 
   return (
-    <section ref={sectionRef} className="relative py-24 lg:py-32 overflow-hidden">
+    <section id="cta" ref={sectionRef} className="relative py-24 lg:py-32 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div
           className={`relative border border-foreground transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -56,7 +56,7 @@ export function CtaSection() {
                 </h2>
 
                 <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">
-                  Watch the Simia demo, explore the linked layers, and see how emergency data moves through the full ecosystem.
+                  Watch the live demo, explore the linked layers, and see how emergency data moves through the full ecosystem.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-start gap-4">
@@ -73,17 +73,10 @@ export function CtaSection() {
                       <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </a>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="h-14 px-8 text-base rounded-full border-foreground/20 hover:bg-foreground/5"
-                  >
-                    Book a demo
-                  </Button>
                 </div>
 
                 <p className="text-sm text-muted-foreground mt-8 font-mono">
-                  Simia demo included
+                  Live demo included
                 </p>
               </div>
 
