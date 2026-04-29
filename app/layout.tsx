@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   title: 'Vektor - Distributed Emergency Intelligence System',
   description: 'Vektor connects edge devices, personal mobile systems, and a central decision engine into one resilient emergency response network.',
   generator: 'v0.app',
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export default function RootLayout({

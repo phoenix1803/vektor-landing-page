@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -43,8 +44,19 @@ export function Navigation() {
         >
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-xl text-foreground" : "text-2xl text-white"}`}>Vektor</span>
-            <span className={`font-mono transition-all duration-500 ${isScrolled ? "text-[10px] mt-0.5 text-muted-foreground" : "text-xs mt-1 text-white/60"}`}>SYS</span>
+            <div className={`relative transition-all duration-500 ${isScrolled ? "h-8 w-8" : "h-10 w-10"}`}>
+              <Image
+                src="/logo.png"
+                alt="Vektor logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            <div className="flex flex-col leading-none">
+              <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-xl text-foreground" : "text-2xl text-white"}`}>Vektor</span>
+              <span className={`font-mono transition-all duration-500 ${isScrolled ? "text-[10px] text-muted-foreground" : "text-xs text-white/60"}`}>SYS</span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}
